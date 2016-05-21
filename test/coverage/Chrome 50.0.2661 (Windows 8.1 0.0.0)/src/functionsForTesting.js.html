@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src\functionsForTesting.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">src/</a> functionsForTesting.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">98.61% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>71/72</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>41/41</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>6/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">98.61% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>71/72</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * Created by admin on 18.03.2016.
+ */
+&nbsp;
+//Заглушка на ввод только чисел в т.ч. через контекстное меню "Вставить"
+var elements = document.getElementsByClassName("rfield");
+for(var i=0; i&lt;elements.length; i++) {
+<span class="cstat-no" title="statement not covered" >    elements[i].oninput = inputOnlyNumbers;</span>
+}
+function inputOnlyNumbers() {
+    var sideValue = this.value;
+    //this.value = sideValue.replace(/[^1-9]/g, ''); Cannot read property 'replace' of undefined - закомментил
+}
+&nbsp;
+//Получаем значения сторон из input, преобразуем в число
+var sideAB, sideBC, sideCA;
+function getData () {
+    sideAB = Number(document.getElementById('sideAB').value);               //Получаем из инпута
+    sideBC = Number(document.getElementById('sideBC').value);
+    sideCA = Number(document.getElementById('sideCA').value);
+}
+&nbsp;
+//Отображаем значения сторон + если NaN выводим сообщение
+function displaySides() {
+    if(isNaN(sideAB)) {
+        $('#outAB').text('Not a number');
+    } else {
+        $('#outAB').text(sideAB);
+    }
+    if(isNaN(sideBC)) {
+        $('#outBC').text('Not a number');
+    } else {
+        $('#outBC').text(sideBC);
+    }
+    if(isNaN(sideCA)) {
+        $('#outCA').text('Not a number');
+    } else {
+        $('#outCA').text(sideCA);
+    }
+}
+&nbsp;
+///Проверяем и отображем значения сторон
+var elMessage = $('#message');                              //Определили доступ к елементу для вывода результата расчета
+var elErrorMessage = $('#errorMessage');
+&nbsp;
+function checkAndShowData () {
+    //getData();
+    if (Math.sign(sideAB) === -1 || Math.sign(sideBC) === -1 || Math.sign(sideCA) === -1) {
+        console.log("Одна или несколько сторон являются отрицательным числом");
+        elErrorMessage.text('Error: One or more sides are not a positive number');
+        elMessage.text('');
+        displaySides();
+        changeColorIfError();
+    } else if (Math.sign(sideAB) !== 1 || Math.sign(sideBC) !== 1 || Math.sign(sideCA) !== 1) {
+        console.log("Одна или несколько сторон не являются числом");
+        elErrorMessage.text('Error: One or more sides are not a number');
+        elMessage.text('');
+        displaySides();
+        changeColorIfError();
+    } else {
+        if (Number.isInteger(sideAB) === false || Number.isInteger(sideBC) === false || Number.isInteger(sideCA) === false) {
+            console.log("Одна или несколько сторон не являются целым числом");
+            elErrorMessage.text('Error: One or more sides are not an integer number');
+            elMessage.text('');
+            displaySides();
+            changeColorIfError();
+        } else {
+            defineTriangle(sideAB,sideBC,sideCA);
+            displaySides();
+            elErrorMessage.text('');                //Скрыть раннее сообщение об ошибке
+            $('.sidesOut').css('color','black');    //Вернуть в черный цвет
+        }
+    }
+}
+&nbsp;
+//В случае ошибки форматируем значения сторон
+function changeColorIfError() {
+    $('.sidesOut').css('color', 'red');
+}
+&nbsp;
+//Определяем тип треугольника
+function defineTriangle (a,b,c) {
+    var el = $('.canvas-container');                //ссылка на объект-коллекцию canvas
+    if (a+b &lt; c || a+c &lt; b || b+c &lt; a) {
+        console.log("The set does not describe a triangle");
+        elMessage.text('The set does not describe a triangle');
+        el.fadeOut();                               //Скрыть все треугольники
+    } else if (a+b === c || a+c === b || b+c === a) {
+        console.log("Degenerate Triangle");
+        elMessage.text('Degenerate Triangle');
+        el.not(':eq(2)').fadeOut(2);                //Скрыть
+        el.eq(2).fadeIn('slow');                    //Отборазить
+&nbsp;
+    } else if (a === b &amp;&amp; b === c &amp;&amp; c === a) {
+        console.log("Equilateral Triangle");
+        elMessage.text('Equilateral Triangle');
+        el.not(':eq(0)').fadeOut(2);
+        el.eq(0).fadeIn('slow');
+    } else if (a === b || b === c || c === a) {
+        console.log("Isosceles Triangle");
+        elMessage.text('Isosceles Triangle');
+        el.not(':eq(1)').fadeOut(2);
+        el.eq(1).fadeIn('slow');
+    }  else {
+        console.log("Scalene Triangle");
+        elMessage.text('Scalene Triangle');
+        el.not(':eq(3)').fadeOut(2);
+        el.eq(3).fadeIn('slow');
+    }
+}
+&nbsp;
+&nbsp;
+// THIS CHAPTER FOR "buttonsFunctionsSpec.js"
+&nbsp;
+////Генератор случайных чисел от 1 до 9
+//function fillRandom() {
+//    var AB = $('#sideAB');
+//    var BC = $('#sideBC');
+//    var CA = $('#sideCA');
+//    function getRandomInt() {
+//        return Math.floor(Math.random() * (10 - 1)) + 1;
+//    }
+//    AB.val(getRandomInt());//Заполнить input случайным числом
+//    BC.val(getRandomInt());
+//    CA.val(getRandomInt());
+//}
+//
+////Очищаем значения по reset
+//function resetDisplayedData() {
+//    $('#message').text('');
+//    $('.sidesOut').css('color','black').find('span').text('No value');
+//    $('#errorMessage').text('');
+//    $('.canvas-container').addClass('animated zoomIn').fadeIn();//Возвращаем все рисунки по нажатию reset
+//
+//}
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat May 21 2016 09:41:06 GMT+0300 (Финляндия (лето))
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
