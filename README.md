@@ -11,8 +11,8 @@ My markup for mobile devices is not so good)))
 
 ### Branches
 Repository holds two branches:
-- gh-pages - distribution branch, try application [here]
-- master - branch for developing and testing
+- master - distribution branch, try application [here]
+- gh-pages - branch for developing and testing
 
 
 
