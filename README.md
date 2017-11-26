@@ -4,7 +4,7 @@ This program calculates a type of triangle by the number of equal sides.
 Application has all necessary documentation for it's developing as specification, test plan, test cases and test reports. 
 
 ### Version
-1.0.0
+1.2.0
 
 ### Constraints 
 My markup for mobile devices is not so good))) 
